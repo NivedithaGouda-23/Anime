@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Anime</string>
+    <string name="anime_details_title">Anime Details</string>
+    <string name="synopsis_label">Plot/Synopsis:</string>
+    <string name="genres_label">Genres:</string>
+    <string name="episodes_label">Episodes:</string>
+    <string name="score_label">Score:</string>
+    <string name="error">Error:</string>
+    <string name="anime_list_title">Anime List</string>
+    <string name="anime_score_label">Score: %1$s</string>
+    <string name="anime_episodes_label">Episodes: %1$s</string>
+    <string name="error_message_label">Error: %1$s</string>
+
+</resources>
