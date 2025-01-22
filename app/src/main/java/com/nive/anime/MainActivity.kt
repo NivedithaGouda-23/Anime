@@ -46,10 +46,8 @@ fun AppNavHost(navController: NavHostController) {
             startDestination = "home",
             modifier = Modifier.padding(paddingValues)
         ) {
-            // Home Screen
             composable("home") {
-                // Provide required parameters
-                val viewModel = hiltViewModel<HomeViewModel>() // Use Hilt to get the ViewModel
+                val viewModel = hiltViewModel<HomeViewModel>()
                 HomeScreen(
                     viewModel = viewModel,
                     onAnimeClick = { animeId ->
@@ -58,10 +56,9 @@ fun AppNavHost(navController: NavHostController) {
                 )
             }
 
-            // Anime Detail Screen
             composable("detail/{animeId}") { backStackEntry ->
                 val animeId = backStackEntry.arguments?.getString("animeId")?.toIntOrNull()
-                val viewModel = hiltViewModel<DetailsViewModel>() // Use Hilt for DetailsViewModel
+                val viewModel = hiltViewModel<DetailsViewModel>()
                 animeId?.let {
                     DetailsScreen(
                         animeId = it,
